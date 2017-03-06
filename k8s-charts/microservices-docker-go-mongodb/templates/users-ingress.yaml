@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  labels:
+    app: {{ template "fullname" . }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+  name: users
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /users
+        backend:
+          serviceName: users
+          servicePort: 80

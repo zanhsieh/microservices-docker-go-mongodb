@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  labels:
+    app: {{ template "fullname" . }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+  name: showtimes
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /showtimes
+        backend:
+          serviceName: showtimes
+          servicePort: 80

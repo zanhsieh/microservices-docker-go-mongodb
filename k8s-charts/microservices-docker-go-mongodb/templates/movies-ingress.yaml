@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  labels:
+    app: {{ template "fullname" . }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+  name: movies
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /movies
+        backend:
+          serviceName: movies
+          servicePort: 80
