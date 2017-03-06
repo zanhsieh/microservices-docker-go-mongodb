@@ -12,10 +12,21 @@ env:
     - secure: "cK1X+8tbMEp1p1Es/6VfBBDeAUE/BsOHIzmkHvNzMhBvdI8lAFsbAyzYJpfnjGC1vQLsF3hJa5eN21ZttlX4MDLYQ4Z6HiGyNGuPW64Auo0GmQtIP5UNSUDoHjQpkjr5qNotGbrKViyiK9tgnJgokQh3ErS7lnp5kv+LsYhA0uA96lp6DPcngQb5HnAiaOGA87YXWiuayBQ0t9i0NoPfTPeRP9f+CYpTQzOpn0lbHBDohDZfTeE9J1hLEptEUJkJSTnTgVdw6+XScRjHJx7RY3sm7QOj5h6lgn9Vb1okkwo6gzrAnwcos+LcdjQGu+ylzepDiG7gRGhnnTaBfPEQuxB5aR8H7/r8rNknbKG2pfX0Hb7uMr0wajMq6ug+3PUmz0cICLFHLDuSBw93wRXglT/JbEO+/SLyHXA58/CGrDQ1ypv6W72znQEO5WVa6ViYvQ+2uwctnXDuksNs8xKlPUG0iHv1eti0gMRXYtZ0siIr9oPQwhIwPlVIRL6u3xtY+mMmrJ0CMRyfwDUAZnWZb8h76EsKaJZLTsuz/WMZZJKiCG179iDeI6kZNZQrrnEjVY/UgE8Dm9MlVCf/SU9LNF1eEunR8ZaI9TcnhJZeKkQk5mWdNhgcTpNppHf6DzCTkDoKqdepM+yVxnWs2fKPGOc60mSypbVwKXbQeEkCYfQ=" # DOCKER_EMAIL
     - secure: "hf5bMeS5bMk+AYzDnimBP+EGJjoSnRJL01YbXAPa3UYkpODFSUlj+VSGsdT1N8fKJ7UINx2RdodoIQpZZj7fAhfoZKqWjavEmSSFQBYLnZJyJvCF84l0NYNsxvBXUWtPyKF3hUSZdRfhZjRaiB1ZRUvdzB/pU623vxU969IeaqP1r3jYfSk7w33K1M+lelJ6arbXVpyW4wa3cQ6GOzcTq248VFCB1Za/fCfN1mAwQAB5T9xnEnNbrlHP/OkLqUchxh4qVMkatjU0vxD3XYzg4GVaUxR5oF5nxWiv2HnIWxsEd7DcegtzEw9QFAhR0OjpHqU/OFhKmcmr8xh2ByWwsdev6llsHivd+P3FnvyPvwn7mfOJgsYyQQLuM5/lrSzT20wp8SG73rNroe/hcQBdhGgulKwMRPaTRk8Q1gptTpiDERE22vM2LhTNXEnzompQNfERPP8jXnBJ5FwVvptLg5NPDQ4f29wxkEHLxZVi4b612B3rwgMzGh5ywd+WGchcDBDDbrPd3hm2gnMWINGClspFChChBpCZ8agedRldC7TSbhLXkDPHzvzbqd35ugkBjDFjCJwhd0A8GqsjLOPQk8v9f4Uqyn3L8Sv43/zjAJEGCLKGjd4YouqqrkL21tyKsg5XJLI2GXaLzQkXhBtqeUaqiTfiZQyokNqcpgwN1vo=" # DOCKER_USER
     - secure: "NmMPe/qQTO0HLBgHkDHMS7+Hu8jAx9x6H/BSpvpwEoxWbM9U1I/rHo2xrW55y3tu6xIa6RWHa5IAh1B9D/sCdhM/bES2nlLYf3zmgE+zmFspfenQdOfkkvp84ymw9x1sVGIk/xPOHSCJbhQhdr367JcMTOn9LEUliccobwVAFbf5V02MbNZm2KBvALx/Q+0HdqLpipV45SG5xvlUxjj2j0aAjEhN/yBnunDxfiv/q85HWh8kibK+ktSmUfsp+dI5bHZ/u/pRrF8Y2bUf7WB8zUSoA/BE9Y+8qcpWOgGXdtnw64ijTRhiTTqD5P54dLL90VOXTIYYNKb0Lt0cxTufdU9dNFGXYCJmQtGzoJ8z000QZzathkTq4aFTbUf23nqlr2Q143MBcgA+7YOmLOJ1XShikCWvyVUCW18tEkKnnR2txXiLkEVMtXAj5fYRzj+HJNNgUValCoGLUqQjVOwJ46TJQe/whpCLFnVEvIVmU6VhBDR+x9ikSOHAer6UDV6OMqWQhRR/4cklK7lcuEHjRUDGP01SHJuJSLicdCG8LEV3Sv4Aww8eTKl3Td+M6AvOie6i8fqf6c8ZudW1iBO5/5WM95urGUmuQiEEor3l99/3AMAlW8DERY35+MIWbosx+w6YNcQgwWtTexMirI/dn8T9ASvzr6v0MtefM+zip00=" # DOCKER_PASS
+    - secure: "gY4Y72rZYvkfojOdVvOT/MJ/XmSXOg+/qxCvunHkwrKAjWd+BsDWLEi4MYv145KLAWX++8RsJVkmfUt8V+kIfVXUsf7TzM0suyd/JIBpMKvFNYlncWDDFOPK2AZl/PWo5byQoMWxw56bZJUyQT3zkJJxtzbOPYFnqk2aKK57RMW6q51dxamUxberRqThp/hXNPaLUSkMUThtoPU03XbJdhafcdJ0gg6ePwykDtXBSxPVGG7Wp+DlORUpu54gl7w3zuXXcacku9RWmnMVPc6NYmIB9arOlz9apSeIAUlRr1N4zY8xei2ruB4Atcms0uRGUGMSATte7CnaZGKeZvnShbyr9F/GBRoD3N/aCOJ1YHQXSPhb6lm7KFxYxt7oB2oTcAS00B5g/6IiosdY7iOAhxDy/JfTtvvBWfLtGQRK6zJFNTG83nvhgZsKZ2WNtE0R6yINoeBQI7qP81gL05OvqukUSSLaFOeEXP3orAFImd6vvgrRmKKG7cUx7WSvt9ndeX7UqozW5ZjK0R6Jp6alA3IOK0TM5KiNhBh6CP1Ru0z5HBdx6zRHIShWVhrpdBwMdpCQJG0C9CKsfwfG+dwKozYecGDifPvvczHKmYWCJaxntESpmUEtbSuUNSIJpGDpSOLhiMCl9l3uFIxs8G91oKfau9adl2O1J031KoZ1dC0=" #GCLOUD_EMAIL  {string_of_characters}@developer.gserviceaccount.com
     - REGION=hk
     - ENVIRONMENT=dev
     - COMMIT=${TRAVIS_COMMIT::7}
+    - CLOUDSDK_COMPUTE_ZONE=asia-east1-b
+    - CLOUDSDK_CORE_PROJECT=SeekerCapTest
+#GCLOUD_KEY  base64-encoded version of project_name-xxxxx.json
+#GKE_USERNAME  the_cluster_username
+#GKE_PASSWORD  the_cluster_password
+#GKE_SERVER  the_cluster_ip
     - CLOUDSDK_CORE_DISABLE_PROMPTS=1
+
+cache:
+  directories:
+    - "$HOME/google-cloud-sdk/"
 
 after_success:
   - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
@@ -46,3 +57,15 @@ after_success:
   - docker build -t $CONFIG:$ENVIRONMENT-$REGION-$COMMIT ./bookings
   - docker tag $CONFIG:$ENVIRONMENT-$REGION-$COMMIT $CONFIG:$TAG
   - docker push $CONFIG
+
+  # DEPLOY TO GOOGLE CONTAINER CLUSTER
+  - if [ ! -d "$HOME/google-cloud-sdk/bin" ]; then rm -rf $HOME/google-cloud-sdk; curl https://sdk.cloud.google.com | bash; fi
+  # Add gcloud to $PATH
+  - source /home/travis/google-cloud-sdk/path.bash.inc
+  - gcloud version
+  - gcloud --quiet components update kubectl
+  # Auth flow
+  - echo $GCLOUD_KEY | base64 --decode > gcloud.p12
+  - gcloud auth activate-service-account $GCLOUD_EMAIL --key-file gcloud.p12
+  - ssh-keygen -f ~/.ssh/google_compute_engine -N ""
+  - gcloud container clusters get-credentials $CLOUDSDK_CORE_PROJECT
