@@ -15,15 +15,15 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      creationTimestamp: null
       labels:
+        app: {{ template "fullname" . }}
         service: bookings
     spec:
       containers:
       - env:
         - name: VIRTUAL_HOST
           value: bookings.local
-        image: cinema/bookings
+        image: zanhsieh/cinema-bookings
         name: cinema-bookings
         resources: {}
       restartPolicy: Always

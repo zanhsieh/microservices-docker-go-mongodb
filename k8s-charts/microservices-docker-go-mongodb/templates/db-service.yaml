@@ -15,5 +15,3 @@ spec:
   selector:
     app: {{ template "fullname" . }}
     service: db
-status:
-  loadBalancer: {}

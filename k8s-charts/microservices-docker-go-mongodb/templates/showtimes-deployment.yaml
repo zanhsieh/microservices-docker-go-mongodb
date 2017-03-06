@@ -23,7 +23,7 @@ spec:
       - env:
         - name: VIRTUAL_HOST
           value: showtimes.local
-        image: cinema/showtimes
+        image: zanhsieh/cinema-showtimes
         name: cinema-showtimes
         resources: {}
       restartPolicy: Always

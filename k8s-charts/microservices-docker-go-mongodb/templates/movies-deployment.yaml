@@ -10,7 +10,7 @@ spec:
   replicas: 1
   strategy:
     rollingUpdate:
-      maxSurge: 
+      maxSurge:
       maxUnavailable: 1
     type: RollingUpdate
   template:
@@ -23,7 +23,7 @@ spec:
       - env:
         - name: VIRTUAL_HOST
           value: movies.local
-        image: cinema/movies
+        image: zanhsieh/cinema-movies
         name: cinema-movies
         resources: {}
       restartPolicy: Always

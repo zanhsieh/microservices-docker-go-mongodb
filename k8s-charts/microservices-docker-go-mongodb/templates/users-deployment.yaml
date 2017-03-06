@@ -23,7 +23,7 @@ spec:
       - env:
         - name: VIRTUAL_HOST
           value: users.local
-        image: cinema/users
+        image: zanhsieh/cinema-users
         name: cinema-users
         resources: {}
       restartPolicy: Always
