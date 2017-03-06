@@ -1,0 +1,29 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    app: {{ template "fullname" . }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+  name: movies
+spec:
+  replicas: 1
+  strategy:
+    rollingUpdate:
+      maxSurge: 
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: {{ template "fullname" . }}
+        service: movies
+    spec:
+      containers:
+      - env:
+        - name: VIRTUAL_HOST
+          value: movies.local
+        image: cinema/movies
+        name: cinema-movies
+        resources: {}
+      restartPolicy: Always

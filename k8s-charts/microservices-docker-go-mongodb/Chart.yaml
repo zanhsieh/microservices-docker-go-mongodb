@@ -1,0 +1,5 @@
+name: microservices-docker-go-mongodb
+apiVersion: v1
+description: A Helm microservices-docker-go-mongodb chart for Kubernetes
+version: 0.1.0
+engine: gotpl
