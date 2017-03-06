@@ -8,7 +8,8 @@ metadata:
   name: users
 spec:
   rules:
-  - http:
+  - host: users.zanhsieh.net
+    http:
       paths:
       - path: /users
         backend:

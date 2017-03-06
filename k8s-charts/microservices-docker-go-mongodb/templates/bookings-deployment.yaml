@@ -22,8 +22,10 @@ spec:
       containers:
       - env:
         - name: VIRTUAL_HOST
-          value: bookings.local
-        image: zanhsieh/cinema-bookings
+          value: bookings.zanhsieh.net
+        image: zanhsieh/cinema-bookings:{{ .Values.environment }}-{{ .Values.region }}-latest
         name: cinema-bookings
+        ports:
+          - containerPort: 8080
         resources: {}
       restartPolicy: Always

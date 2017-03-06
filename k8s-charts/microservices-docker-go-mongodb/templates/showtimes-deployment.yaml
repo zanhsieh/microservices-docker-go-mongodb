@@ -22,8 +22,10 @@ spec:
       containers:
       - env:
         - name: VIRTUAL_HOST
-          value: showtimes.local
-        image: zanhsieh/cinema-showtimes
+          value: showtimes.zanhsieh.net
+        image: zanhsieh/cinema-showtimes:{{ .Values.environment }}-{{ .Values.region }}-latest
         name: cinema-showtimes
+        ports:
+          - containerPort: 8080
         resources: {}
       restartPolicy: Always

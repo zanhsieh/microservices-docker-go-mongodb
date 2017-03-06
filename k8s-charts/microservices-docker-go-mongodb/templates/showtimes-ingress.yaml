@@ -8,7 +8,8 @@ metadata:
   name: showtimes
 spec:
   rules:
-  - http:
+  - host: showtimes.zanhsieh.net
+    http:
       paths:
       - path: /showtimes
         backend:

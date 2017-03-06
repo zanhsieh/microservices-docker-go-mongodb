@@ -10,9 +10,9 @@ metadata:
 spec:
   clusterIP: None
   ports:
-  - name: headless
-    port: 55555
-    targetPort: 0
+  - name: http
+    port: 80
+    targetPort: 8080
   selector:
     app: {{ template "fullname" . }}
     service: bookings
