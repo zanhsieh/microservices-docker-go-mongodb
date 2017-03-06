@@ -1,0 +1,48 @@
+sudo: required
+
+services:
+  - docker
+
+language: go
+go:
+  - 1.7.x
+
+env:
+  global:
+    - secure: "kyCbnO/ET+LsjQx4RHB+srz1iwQBJglxvBpK8Mk9yOyaL+/7tsJiwe2iO/1H/nr0YK2uvTcbDSFC5alhvEeZXpzf8uN/vRAQTWZN8GXbyxun6j7jBIOp3T6OHLnzTii4cLxmXnRFt2QlkFsz1KPHaGeJMifF0bKsqxfXqLZ1rRJ6x+nq1y5KtweW0JP8T6IHt7uzIwyxe3VKEfpxucG371kyD8JOLzp+RhUBI8GBtXhtvJIZJB52k3u9m1rwm1HnykQz6sugkXuN5udLbwC+R856y/BaWSon9SKZ33/1SNRpzk48S6d1LvgNyWk0GKRWl5x0RPghj1Jp4mcCsXgKly2g6jLQqUXOb60j/qy9ZocriRqW0DaFnunmQGlSmMmfplWLFWvyclgeylyGk5z7EYfiFuYBnDg/VapqObc/aCMNaJLr6BJnma9iRBc4iDYpgRVVFncLB7ICy1ltBw+5o2IILoNPwWFSj+UQGpqwJF72kp61BmPOd6elK2zAMvWwK9IkmGM+Aq/wMRc2dNzsKaBxKf/v1WEIuhr6qqsd4yopfR57BThhJT8ojq3j8V5J9CsSyNmkuuRYqlQwpi1N/BYdDTikK59rkA1KC46hlGl5TZDlB/riInfCmNnwzQvhSXtEdmOiX68CSbZEJUYp3px2VgaJbPrcNFso8/I02G4=" # DOCKER_EMAIL
+    - secure: "GScWg+oKLPDVwrqz0Mw7TvIZFtxgX/boAVSI3T5SpQPXsgLJVxHC6PsAViJJx71rwlGX2ovbvunSnINTORxg4d2yyeyogSFZtdbyKPSmMaoaagfSz1IpDvty7HjEXkElG8wtPLP4tgese3KJDY5CpzFGorA+PaAueZFWSlYIm3m2MkjqIhLZz6KrCB3G14VwVG03velKHEdWf3KM3KrwmR8mAnhxVklAO81aVld6j+NeZyG7lzqOUtA3kGtKcGdnCuQtLIGGqMdtqu52f70l5+U+9DQeL9bF38QmUPbxf1/lOW3SeBAiFPogzd/Dba3LzmASUoU163Tu05a1fB6WQ0meMxB9TpQcHoSHUWipgjJK598vlBQ1Aauu4du64o87VVIEuT3aQIeSj/Jt/ioWWzAXtZM+H0mXtd+AAp93ADcQX6TkmGH5d3Sft20U6IXhVYoEWbhlEZ7Wxqf7mzDkRNyDP7hNQ4w29xFMdagMod64bEQanI4Y9v7WvWDQy8DpFuhMUqhojXGNODDlI7RnB0gSGpolfYaSLo1eDMTESTclQnu05zNp+4jZqYvBaA+8WcIWstUz4CuD6X2BubdUNnYKO+SRQUN0KjMQsEPyv7to7SlS4IXaeQiqI7iPqNzrP+HbYfOfOnmFEQlfN7qkXlFJLVe8KFjPNEMHQ9StOmU=" # DOCKER_USER
+    - secure: "DAW93RQJ5DbbQ01e+hc4LBSkOMUUrJtweiUuAZGRZgnpAufP1DZ5obNM7R2T6n71O0JBdDKYjEegsL7I0+XSe/DWBY9e59Ly/d2G8cLLe8RoJoYx5iZ4idg+ySzylTfdCKsxMv4a5gj9ZVLK+hT6fXR5aEs4nDo+3SdNAagyg6dP0R2F+b12Vp7Lrr7/AeLyoak/OjVX49PNf/m4MELokaxLN/biPkqPqfCF4eVahGNx8mvipAvU91j2d6htYCSq9rnNNe4nA5zguM84xAR8uKwJdWl8cp/Xvdwz0pjfdZlSFphztXxwBqkyYYBXqkqYMj5ht6ntKd5KTYJE+b0NmCLnkD76G79Q7p8RPhn8Xg+tZBlEZmWlJhxfLO7Qm51UacmdFWnj6ayb8Qp/uRsm9iH6ZpegxFZdvwSGXL3ly5mKElgcq7CrBhXcucjnF/Srt0B1vDXUkhjgRvqlt2mRR6+t+ZliAvN5ESPDQKoixQsEPdy+i6XFsYbXjvv+hGunM3n7T85/A/Q7/ziFaSxvlrQ7gTbDbvpTuEs6nQDTJ5lQo8oofaBjQIKzlT8KzF17vTOTCLg+jdwUojBm2AzmBZPvS9bR7EfETfYJj7YIVTn4mOZHDKI4TYX+AmVjqzTJ8B1FdFZX9oO6eNAKoPSN0kI1ZyTjdn8HgEE9v3E+nWE=" # DOCKER_PASS
+    - REGION=hk
+    - ENVIRONMENT=dev
+    - COMMIT=${TRAVIS_COMMIT::7}
+    - CLOUDSDK_CORE_DISABLE_PROMPTS=1
+
+after_success:
+  - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+
+  #TAG
+  - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "$ENVIRONMENT-$REGION-latest"; else echo $TRAVIS_BRANCH ; fi`
+
+  # USERS
+  - export CONFIG=zanhsieh/cinema-users
+  - docker build -t $CONFIG:$ENVIRONMENT-$REGION-$COMMIT ./users
+  - docker tag $CONFIG:$ENVIRONMENT-$REGION-$COMMIT $CONFIG:$TAG
+  - docker push $CONFIG
+
+  # SHOWTIMES
+  - export CONFIG=zanhsieh/cinema-showtimes
+  - docker build -t $CONFIG:$ENVIRONMENT-$REGION-$COMMIT ./showtimes
+  - docker tag $CONFIG:$ENVIRONMENT-$REGION-$COMMIT $CONFIG:$TAG
+  - docker push $CONFIG
+
+  # MOVIES
+  - export CONFIG=zanhsieh/cinema-movies
+  - docker build -t $CONFIG:$ENVIRONMENT-$REGION-$COMMIT ./movies
+  - docker tag $CONFIG:$ENVIRONMENT-$REGION-$COMMIT $CONFIG:$TAG
+  - docker push $CONFIG
+
+  # BOOKINGS
+  - export CONFIG=zanhsieh/cinema-bookings
+  - docker build -t $CONFIG:$ENVIRONMENT-$REGION-$COMMIT ./bookings
+  - docker tag $CONFIG:$ENVIRONMENT-$REGION-$COMMIT $CONFIG:$TAG
+  - docker push $CONFIG
