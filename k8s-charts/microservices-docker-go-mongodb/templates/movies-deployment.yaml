@@ -4,6 +4,7 @@ metadata:
   labels:
     app: {{ template "fullname" . }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    component: movies
     release: "{{ .Release.Name }}"
   name: movies
 spec:
@@ -17,15 +18,23 @@ spec:
     metadata:
       labels:
         app: {{ template "fullname" . }}
-        service: movies
+        component: movies
     spec:
       containers:
       - env:
         - name: VIRTUAL_HOST
-          value: movies.zanhsieh.net
+          value: movies
         image: zanhsieh/cinema-movies:{{ .Values.environment }}-{{ .Values.region }}-latest
         name: cinema-movies
         ports:
           - containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /movies
+            port: 8080
+          periodSeconds: 1
+          timeoutSeconds: 1
+          successThreshold: 1
+          failureThreshold: 10
         resources: {}
       restartPolicy: Always

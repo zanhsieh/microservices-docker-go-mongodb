@@ -4,6 +4,7 @@ metadata:
   labels:
     app: {{ template "fullname" . }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    component: bookings
     release: "{{ .Release.Name }}"
   name: bookings
 spec:
@@ -17,15 +18,23 @@ spec:
     metadata:
       labels:
         app: {{ template "fullname" . }}
-        service: bookings
+        component: bookings
     spec:
       containers:
       - env:
         - name: VIRTUAL_HOST
-          value: bookings.zanhsieh.net
+          value: bookings
         image: zanhsieh/cinema-bookings:{{ .Values.environment }}-{{ .Values.region }}-latest
         name: cinema-bookings
         ports:
           - containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /bookings
+            port: 8080
+          periodSeconds: 1
+          timeoutSeconds: 1
+          successThreshold: 1
+          failureThreshold: 10
         resources: {}
       restartPolicy: Always

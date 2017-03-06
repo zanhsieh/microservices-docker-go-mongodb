@@ -6,6 +6,7 @@ metadata:
   labels:
     app: {{ template "fullname" . }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    component: db
     release: "{{ .Release.Name }}"
   name: db-claim0
 spec:

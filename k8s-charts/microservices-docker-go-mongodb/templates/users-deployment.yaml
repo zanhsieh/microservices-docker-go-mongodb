@@ -4,6 +4,7 @@ metadata:
   labels:
     app: {{ template "fullname" . }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    component: users
     release: "{{ .Release.Name }}"
   name: users
 spec:
@@ -17,15 +18,23 @@ spec:
     metadata:
       labels:
         app: {{ template "fullname" . }}
-        service: users
+        component: users
     spec:
       containers:
       - env:
         - name: VIRTUAL_HOST
-          value: users.zanhsieh.net
+          value: users
         image: zanhsieh/cinema-users:{{ .Values.environment }}-{{ .Values.region }}-latest
         name: cinema-users
         ports:
           - containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /users
+            port: 8080
+          periodSeconds: 1
+          timeoutSeconds: 1
+          successThreshold: 1
+          failureThreshold: 10
         resources: {}
       restartPolicy: Always

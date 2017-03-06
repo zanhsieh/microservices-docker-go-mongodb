@@ -4,6 +4,7 @@ metadata:
   labels:
     app: {{ template "fullname" . }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    component: db
     release: "{{ .Release.Name }}"
   name: db
 spec:
@@ -14,7 +15,7 @@ spec:
     metadata:
       labels:
         app: {{ template "fullname" . }}
-        service: db
+        component: db
     spec:
       containers:
       - image: mongo:3.3

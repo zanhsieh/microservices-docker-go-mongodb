@@ -1,0 +1,40 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: "gce"
+  labels:
+    app: {{ template "fullname" . }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+  name: ingress
+spec:
+  rules:
+  - host: users.zanhsieh.net
+    http:
+      paths:
+      - path: /users
+        backend:
+          serviceName: users
+          servicePort: 83
+  - host: showtimes.zanhsieh.net
+    http:
+      paths:
+      - path: /showtimes
+        backend:
+          serviceName: showtimes
+          servicePort: 82
+  - host: movies.zanhsieh.net
+    http:
+      paths:
+      - path: /movies
+        backend:
+          serviceName: movies
+          servicePort: 81
+  - host: bookings.zanhsieh.net
+    http:
+      paths:
+      - path: /bookings
+        backend:
+          serviceName: bookings
+          servicePort: 80

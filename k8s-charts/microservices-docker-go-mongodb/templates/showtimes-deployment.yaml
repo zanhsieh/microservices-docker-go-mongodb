@@ -4,6 +4,7 @@ metadata:
   labels:
     app: {{ template "fullname" . }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    component: showtimes
     release: "{{ .Release.Name }}"
   name: showtimes
 spec:
@@ -17,15 +18,23 @@ spec:
     metadata:
       labels:
         app: {{ template "fullname" . }}
-        service: showtimes
+        component: showtimes
     spec:
       containers:
       - env:
         - name: VIRTUAL_HOST
-          value: showtimes.zanhsieh.net
+          value: showtimes
         image: zanhsieh/cinema-showtimes:{{ .Values.environment }}-{{ .Values.region }}-latest
         name: cinema-showtimes
         ports:
           - containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /showtimes
+            port: 8080
+          periodSeconds: 1
+          timeoutSeconds: 1
+          successThreshold: 1
+          failureThreshold: 10
         resources: {}
       restartPolicy: Always
