@@ -20,7 +20,7 @@ env:
     - ENVIRONMENT=dev
     - COMMIT=${TRAVIS_COMMIT::7}
     - CLOUDSDK_COMPUTE_ZONE=asia-east1-b
-    - CLOUDSDK_CORE_PROJECT=neon-notch-160406
+    - CLOUDSDK_CORE_PROJECT=seekercap-cluster
 #GCLOUD_KEY  base64-encoded version of project_name-xxxxx.json
     - CLOUDSDK_CORE_DISABLE_PROMPTS=1
 
