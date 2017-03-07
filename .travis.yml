@@ -70,7 +70,7 @@ after_success:
   - ssh-keygen -f ~/.ssh/google_compute_engine -N ""
   - gcloud container clusters get-credentials $CLOUDSDK_CORE_PROJECT
   - kubectl config set-credentials default --username=${GKE_USERNAME} --password=${GKE_PASSWORD}
-  - kubectl config set-cluster default --server=${GKE_SERVER} --insecure-skip-tls-verify=true
+  - kubectl config set-cluster default --server=${GKE_SERVER}
   - kubectl config set-context default --cluster=default --user=default
   - kubectl config use-context default
   # PATCH DEPLOYMENTS
