@@ -20,8 +20,8 @@ env:
     - ENVIRONMENT=dev
     - COMMIT=${TRAVIS_COMMIT::7}
     - CLOUDSDK_COMPUTE_ZONE=asia-east1-b
-    - CLOUDSDK_CORE_PROJECT=seekercap-cluster
-#GCLOUD_KEY  base64-encoded version of project_name-xxxxx.json
+    - CLOUDSDK_CORE_PROJECT_ID=neon-notch-160406
+    - CLOUDSDK_CLUSTER_NAME=seekercap-cluster
     - CLOUDSDK_CORE_DISABLE_PROMPTS=1
 
 cache:
@@ -68,11 +68,7 @@ after_success:
   - echo $GCLOUD_KEY | base64 --decode > gcloud.p12
   - gcloud auth activate-service-account $GCLOUD_EMAIL --key-file gcloud.p12
   - ssh-keygen -f ~/.ssh/google_compute_engine -N ""
-  - gcloud container clusters get-credentials $CLOUDSDK_CORE_PROJECT
-  - kubectl config set-credentials default --username=${GKE_USERNAME} --password=${GKE_PASSWORD}
-  - kubectl config set-cluster default --server=${GKE_SERVER}
-  - kubectl config set-context default --cluster=default --user=default
-  - kubectl config use-context default
+  - gcloud container clusters get-credentials $CLOUDSDK_CLUSTER_NAME --project $CLOUDSDK_CORE_PROJECT_ID
   # PATCH DEPLOYMENTS
   - kubectl patch deployment users -p '{"spec":{"template":{"spec":{"containers":[{"name":"'"cinema-users"'","image":"'"$USERS_CONFIG:$ENVIRONMENT-$REGION-$COMMIT"'"}]}}}}' -n $ENVIRONMENT-$REGION
   - kubectl patch deployment showtimes -p '{"spec":{"template":{"spec":{"containers":[{"name":"'"cinema-showtimes"'","image":"'"$SHOWTIMES_CONFIG:$ENVIRONMENT-$REGION-$COMMIT"'"}]}}}}'  -n $ENVIRONMENT-$REGION
