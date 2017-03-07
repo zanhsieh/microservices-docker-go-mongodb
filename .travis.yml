@@ -12,16 +12,16 @@ env:
     - secure: "cK1X+8tbMEp1p1Es/6VfBBDeAUE/BsOHIzmkHvNzMhBvdI8lAFsbAyzYJpfnjGC1vQLsF3hJa5eN21ZttlX4MDLYQ4Z6HiGyNGuPW64Auo0GmQtIP5UNSUDoHjQpkjr5qNotGbrKViyiK9tgnJgokQh3ErS7lnp5kv+LsYhA0uA96lp6DPcngQb5HnAiaOGA87YXWiuayBQ0t9i0NoPfTPeRP9f+CYpTQzOpn0lbHBDohDZfTeE9J1hLEptEUJkJSTnTgVdw6+XScRjHJx7RY3sm7QOj5h6lgn9Vb1okkwo6gzrAnwcos+LcdjQGu+ylzepDiG7gRGhnnTaBfPEQuxB5aR8H7/r8rNknbKG2pfX0Hb7uMr0wajMq6ug+3PUmz0cICLFHLDuSBw93wRXglT/JbEO+/SLyHXA58/CGrDQ1ypv6W72znQEO5WVa6ViYvQ+2uwctnXDuksNs8xKlPUG0iHv1eti0gMRXYtZ0siIr9oPQwhIwPlVIRL6u3xtY+mMmrJ0CMRyfwDUAZnWZb8h76EsKaJZLTsuz/WMZZJKiCG179iDeI6kZNZQrrnEjVY/UgE8Dm9MlVCf/SU9LNF1eEunR8ZaI9TcnhJZeKkQk5mWdNhgcTpNppHf6DzCTkDoKqdepM+yVxnWs2fKPGOc60mSypbVwKXbQeEkCYfQ=" # DOCKER_EMAIL
     - secure: "hf5bMeS5bMk+AYzDnimBP+EGJjoSnRJL01YbXAPa3UYkpODFSUlj+VSGsdT1N8fKJ7UINx2RdodoIQpZZj7fAhfoZKqWjavEmSSFQBYLnZJyJvCF84l0NYNsxvBXUWtPyKF3hUSZdRfhZjRaiB1ZRUvdzB/pU623vxU969IeaqP1r3jYfSk7w33K1M+lelJ6arbXVpyW4wa3cQ6GOzcTq248VFCB1Za/fCfN1mAwQAB5T9xnEnNbrlHP/OkLqUchxh4qVMkatjU0vxD3XYzg4GVaUxR5oF5nxWiv2HnIWxsEd7DcegtzEw9QFAhR0OjpHqU/OFhKmcmr8xh2ByWwsdev6llsHivd+P3FnvyPvwn7mfOJgsYyQQLuM5/lrSzT20wp8SG73rNroe/hcQBdhGgulKwMRPaTRk8Q1gptTpiDERE22vM2LhTNXEnzompQNfERPP8jXnBJ5FwVvptLg5NPDQ4f29wxkEHLxZVi4b612B3rwgMzGh5ywd+WGchcDBDDbrPd3hm2gnMWINGClspFChChBpCZ8agedRldC7TSbhLXkDPHzvzbqd35ugkBjDFjCJwhd0A8GqsjLOPQk8v9f4Uqyn3L8Sv43/zjAJEGCLKGjd4YouqqrkL21tyKsg5XJLI2GXaLzQkXhBtqeUaqiTfiZQyokNqcpgwN1vo=" # DOCKER_USER
     - secure: "NmMPe/qQTO0HLBgHkDHMS7+Hu8jAx9x6H/BSpvpwEoxWbM9U1I/rHo2xrW55y3tu6xIa6RWHa5IAh1B9D/sCdhM/bES2nlLYf3zmgE+zmFspfenQdOfkkvp84ymw9x1sVGIk/xPOHSCJbhQhdr367JcMTOn9LEUliccobwVAFbf5V02MbNZm2KBvALx/Q+0HdqLpipV45SG5xvlUxjj2j0aAjEhN/yBnunDxfiv/q85HWh8kibK+ktSmUfsp+dI5bHZ/u/pRrF8Y2bUf7WB8zUSoA/BE9Y+8qcpWOgGXdtnw64ijTRhiTTqD5P54dLL90VOXTIYYNKb0Lt0cxTufdU9dNFGXYCJmQtGzoJ8z000QZzathkTq4aFTbUf23nqlr2Q143MBcgA+7YOmLOJ1XShikCWvyVUCW18tEkKnnR2txXiLkEVMtXAj5fYRzj+HJNNgUValCoGLUqQjVOwJ46TJQe/whpCLFnVEvIVmU6VhBDR+x9ikSOHAer6UDV6OMqWQhRR/4cklK7lcuEHjRUDGP01SHJuJSLicdCG8LEV3Sv4Aww8eTKl3Td+M6AvOie6i8fqf6c8ZudW1iBO5/5WM95urGUmuQiEEor3l99/3AMAlW8DERY35+MIWbosx+w6YNcQgwWtTexMirI/dn8T9ASvzr6v0MtefM+zip00=" # DOCKER_PASS
-    - secure: "gY4Y72rZYvkfojOdVvOT/MJ/XmSXOg+/qxCvunHkwrKAjWd+BsDWLEi4MYv145KLAWX++8RsJVkmfUt8V+kIfVXUsf7TzM0suyd/JIBpMKvFNYlncWDDFOPK2AZl/PWo5byQoMWxw56bZJUyQT3zkJJxtzbOPYFnqk2aKK57RMW6q51dxamUxberRqThp/hXNPaLUSkMUThtoPU03XbJdhafcdJ0gg6ePwykDtXBSxPVGG7Wp+DlORUpu54gl7w3zuXXcacku9RWmnMVPc6NYmIB9arOlz9apSeIAUlRr1N4zY8xei2ruB4Atcms0uRGUGMSATte7CnaZGKeZvnShbyr9F/GBRoD3N/aCOJ1YHQXSPhb6lm7KFxYxt7oB2oTcAS00B5g/6IiosdY7iOAhxDy/JfTtvvBWfLtGQRK6zJFNTG83nvhgZsKZ2WNtE0R6yINoeBQI7qP81gL05OvqukUSSLaFOeEXP3orAFImd6vvgrRmKKG7cUx7WSvt9ndeX7UqozW5ZjK0R6Jp6alA3IOK0TM5KiNhBh6CP1Ru0z5HBdx6zRHIShWVhrpdBwMdpCQJG0C9CKsfwfG+dwKozYecGDifPvvczHKmYWCJaxntESpmUEtbSuUNSIJpGDpSOLhiMCl9l3uFIxs8G91oKfau9adl2O1J031KoZ1dC0=" #GCLOUD_EMAIL  {string_of_characters}@developer.gserviceaccount.com
+    - secure: "gY4Y72rZYvkfojOdVvOT/MJ/XmSXOg+/qxCvunHkwrKAjWd+BsDWLEi4MYv145KLAWX++8RsJVkmfUt8V+kIfVXUsf7TzM0suyd/JIBpMKvFNYlncWDDFOPK2AZl/PWo5byQoMWxw56bZJUyQT3zkJJxtzbOPYFnqk2aKK57RMW6q51dxamUxberRqThp/hXNPaLUSkMUThtoPU03XbJdhafcdJ0gg6ePwykDtXBSxPVGG7Wp+DlORUpu54gl7w3zuXXcacku9RWmnMVPc6NYmIB9arOlz9apSeIAUlRr1N4zY8xei2ruB4Atcms0uRGUGMSATte7CnaZGKeZvnShbyr9F/GBRoD3N/aCOJ1YHQXSPhb6lm7KFxYxt7oB2oTcAS00B5g/6IiosdY7iOAhxDy/JfTtvvBWfLtGQRK6zJFNTG83nvhgZsKZ2WNtE0R6yINoeBQI7qP81gL05OvqukUSSLaFOeEXP3orAFImd6vvgrRmKKG7cUx7WSvt9ndeX7UqozW5ZjK0R6Jp6alA3IOK0TM5KiNhBh6CP1Ru0z5HBdx6zRHIShWVhrpdBwMdpCQJG0C9CKsfwfG+dwKozYecGDifPvvczHKmYWCJaxntESpmUEtbSuUNSIJpGDpSOLhiMCl9l3uFIxs8G91oKfau9adl2O1J031KoZ1dC0=" # GCLOUD_EMAIL {string_of_characters}@developer.gserviceaccount.com
+    - secure: "xAjveEXpJm66n57l3eaAnnPjbwXxJlJVe2RlTX5+XV3Et8DsHPSRXsADfw4ZqufzyCRxL84+gto5P1yX6i9AQWJSD/5QYGBqaatGCt3IpkD5rEuLx7YQnxLcUtArYhR3olzEz4sdnBHuO9NZcF/va34d1TFDTt26WJSMVIjJr5EbocDL8BbXcTBL+PP+Cn0+VThc+t2Z0S/q9HjMyPnqdwooAQpVorAyhdHH76yYzITWOlJCuuaXyKp98W9ZvoEKY4vNTtqamSwZMzkia85jO7oumUHeDt67UhEcCmuSTN96Q9WSqf8CvDo9iaUUQNAGPRk+FaVwenb0/p2GsFsFwF7PF7bPSmeQambyvg+ypPO31exOWJ9UjQswLYPiNiChF5XrutgYduWKIWoTj0Q8qXUJQn18t/uRQ5ADahfRI9Zk7TffbvwdscNH9kxLWEkcRAXRzyT1tGE+yF73Yj/mQOJMcQiQ0MCifVP779YQPM+ydJiDlyudJHVVYUicp1DXPS0C81D3SokKMVUU/eGFRnYsfO0OMQWGW5z6ablEikqx+XDekhFE9s+4l3ftwb1HMtltAojQh2B0cQD/BGYwedqgtu8440zYLwN3lBiichwiDVjS9rRUb/MMBHyIdSUZlVOmv+hZcceQ+OS6Sw8OeAByDximsQEDR6d4ywlPk8E=" # GKE_SERVER   the_cluster_ip
+    - secure: "7bSs1WJFWJmI0EwX1GF46BS3e9HmGOvZWOpoZ1z1M6ih/RKvdl1I/aPAV6dBwU2UkSd4sHmtEuGE3bYn0jGKgOQEw0+Rq4v1q+P6xaHJf75yCh7O0xsVLnEuMiBlOm4ssLqueoGa+Wcx6HMYFA3H33dacCGjoA5qY6uoDnsR89dCwEHKqDbfKcS7HYSWe7H2CWiNTAkFRiqEqWmU0VqDEw77vj3tJbPxhvhnjVv1mpI0+EKHxWk6CuC78o3ugkjJKHZgLtzVLCBT5Ik0aWhkmwDZ8wzVxYf9m3q7XeQKmMjV/PWA1fNn1L9SbAIeBlzBS2rm/jr9d4FaB2ndUDgMMHgNWEefy3fMQ9U8vYBVyVmZJNgEbV1IJ7mCsLsKoSmz1e3KlyyC8lZBKLMb5cGmBiJXCCVTbhIPn9o8TC6TE1pWM1UHKX7tzCVqKYQp2MuD8Qvh3VO/hIhfWnTiqDzP/MkPtmJb7mco/u1p0SU1cYciVVE87WVG3YF8xMYy5jU4wJjJkF7u0RbOzbg41J22X5UcveGlFFXTJvqZnSxWZ5m6UjgYsJxDW3uz/d9HsQSfikE3YMmLwYE+/6uEbLzuWQoM7nocWoMsamZ1ruyDEFHgXBhWR4ITgxWKm1xdS0oFHzwziZtVu3Hc7lHFMkOnC2qkjwotGGqHUZxIvn7voNA=" # GKE_USERNAME the_cluster_username
+    - secure: "Q9VjGp7Q75AScAmwAhgy8pXaYrlQb+P5kCGKJQaXdtgshors7muJJ390IvxeGVdYrxZgZ2R3tRAkKqII1tU65u7ikf6X79YA3ZOOwOTLKWElQT26PgRlBlLnaTz9QgvnX/YrZ0mTt/6K4IFjkgfQMAklmKrk65RFDWf6sugH1CU2yZAT3lbUMAI4RoEzn/aOqVUowUrewVeL0jZrR3YaU79VWCXN7divdfIRd23m664VjNVG16sg4/DhJcJDl9ya8o9Q+mD4pAeQXwl/RWSq2wS+0AFBFEtow2N3XEmfG1TgBdrIZ2ifbYR5xT1HoOvZyG/VCwAJtMknLeMxks1sbute4xibYpieaPycDL7VV1nU9RMqqhflYNf1eYh0Zc3DkpByYS7jHH+DfiwIkLMRrDoQtwJVDAZ6W60B2wtmjCtOI0GBFY4WhnAAjTcG5lJyb6JUkkl4/DO3A2+V+q3Q4A79OFkQ15Wz06u3h4Qx/5IluW4Yq8UOCFf/GGAeJZG3rDbYmOdMA4eSCyVtApaPOLoBaM0ZQDor78WsFLNhivNH26yC2r61JI4B/tZ3Z7CdrqP3u4GPpTve37rfj6hBB+/kfWfXAfcq/woEa470jxV13OduArtE0/YC4x87EPTyNFt+3ph2577WwPWRfO7vsK9t+FQYe2KiZBuel0qaqhY=" # GKE_PASSWORD the_cluster_password
     - REGION=hk
     - ENVIRONMENT=dev
     - COMMIT=${TRAVIS_COMMIT::7}
     - CLOUDSDK_COMPUTE_ZONE=asia-east1-b
     - CLOUDSDK_CORE_PROJECT=SeekerCapTest
 #GCLOUD_KEY  base64-encoded version of project_name-xxxxx.json
-#GKE_USERNAME  the_cluster_username
-#GKE_PASSWORD  the_cluster_password
-#GKE_SERVER  the_cluster_ip
     - CLOUDSDK_CORE_DISABLE_PROMPTS=1
 
 cache:
@@ -35,37 +35,46 @@ after_success:
   - export TAG=`if [ "$TRAVIS_BRANCH" == "master" ]; then echo "$ENVIRONMENT-$REGION-latest"; else echo $TRAVIS_BRANCH ; fi`
 
   # USERS
-  - export CONFIG=zanhsieh/cinema-users
-  - docker build -t $CONFIG:$ENVIRONMENT-$REGION-$COMMIT ./users
-  - docker tag $CONFIG:$ENVIRONMENT-$REGION-$COMMIT $CONFIG:$TAG
-  - docker push $CONFIG
+  - export USERS_CONFIG=zanhsieh/cinema-users
+  - docker build -t $USERS_CONFIG:$ENVIRONMENT-$REGION-$COMMIT ./users
+  - docker tag $USERS_CONFIG:$ENVIRONMENT-$REGION-$COMMIT $USERS_CONFIG:$TAG
+  - docker push $USERS_CONFIG
 
   # SHOWTIMES
-  - export CONFIG=zanhsieh/cinema-showtimes
-  - docker build -t $CONFIG:$ENVIRONMENT-$REGION-$COMMIT ./showtimes
-  - docker tag $CONFIG:$ENVIRONMENT-$REGION-$COMMIT $CONFIG:$TAG
-  - docker push $CONFIG
+  - export SHOWTIMES_CONFIG=zanhsieh/cinema-showtimes
+  - docker build -t $SHOWTIMES_CONFIG:$ENVIRONMENT-$REGION-$COMMIT ./showtimes
+  - docker tag $SHOWTIMES_CONFIG:$ENVIRONMENT-$REGION-$COMMIT $SHOWTIMES_CONFIG:$TAG
+  - docker push $SHOWTIMES_CONFIG
 
   # MOVIES
-  - export CONFIG=zanhsieh/cinema-movies
-  - docker build -t $CONFIG:$ENVIRONMENT-$REGION-$COMMIT ./movies
-  - docker tag $CONFIG:$ENVIRONMENT-$REGION-$COMMIT $CONFIG:$TAG
-  - docker push $CONFIG
+  - export MOVIES_CONFIG=zanhsieh/cinema-movies
+  - docker build -t $MOVIES_CONFIG:$ENVIRONMENT-$REGION-$COMMIT ./movies
+  - docker tag $MOVIES_CONFIG:$ENVIRONMENT-$REGION-$COMMIT $MOVIES_CONFIG:$TAG
+  - docker push $MOVIES_CONFIG
 
   # BOOKINGS
-  - export CONFIG=zanhsieh/cinema-bookings
-  - docker build -t $CONFIG:$ENVIRONMENT-$REGION-$COMMIT ./bookings
-  - docker tag $CONFIG:$ENVIRONMENT-$REGION-$COMMIT $CONFIG:$TAG
-  - docker push $CONFIG
+  - export BOOKINGS_CONFIG=zanhsieh/cinema-bookings
+  - docker build -t $BOOKINGS_CONFIG:$ENVIRONMENT-$REGION-$COMMIT ./bookings
+  - docker tag $BOOKINGS_CONFIG:$ENVIRONMENT-$REGION-$COMMIT $BOOKINGS_CONFIG:$TAG
+  - docker push $BOOKINGS_CONFIG
 
   # DEPLOY TO GOOGLE CONTAINER CLUSTER
   - if [ ! -d "$HOME/google-cloud-sdk/bin" ]; then rm -rf $HOME/google-cloud-sdk; curl https://sdk.cloud.google.com | bash; fi
-  # Add gcloud to $PATH
+  # ADD GCLOUD TO $PATH
   - source /home/travis/google-cloud-sdk/path.bash.inc
   - gcloud version
   - gcloud --quiet components update kubectl
-  # Auth flow
+  # AUTH FLOW
   - echo $GCLOUD_KEY | base64 --decode > gcloud.p12
   - gcloud auth activate-service-account $GCLOUD_EMAIL --key-file gcloud.p12
   - ssh-keygen -f ~/.ssh/google_compute_engine -N ""
   - gcloud container clusters get-credentials $CLOUDSDK_CORE_PROJECT
+  - kubectl config set-credentials default --username=${GKE_USERNAME} --password=${GKE_PASSWORD}
+  - kubectl config set-cluster default --server=${GKE_SERVER} --insecure-skip-tls-verify=true
+  - kubectl config set-context default --cluster=default --user=default
+  - kubectl config use-context default
+  # PATCH DEPLOYMENTS
+  - kubectl patch deployment users -p '{"spec":{"template":{"spec":{"containers":[{"name":"'"cinema-users"'","image":"'"$USERS_CONFIG:$ENVIRONMENT-$REGION-$COMMIT"'"}]}}}}' -n $ENVIRONMENT-$REGION
+  - kubectl patch deployment showtimes -p '{"spec":{"template":{"spec":{"containers":[{"name":"'"cinema-showtimes"'","image":"'"$SHOWTIMES_CONFIG:$ENVIRONMENT-$REGION-$COMMIT"'"}]}}}}'  -n $ENVIRONMENT-$REGION
+  - kubectl patch deployment movies -p '{"spec":{"template":{"spec":{"containers":[{"name":"'"cinema-movies"'","image":"'"$MOVIES_CONFIG:$ENVIRONMENT-$REGION-$COMMIT"'"}]}}}}'  -n $ENVIRONMENT-$REGION
+  - kubectl patch deployment bookings -p '{"spec":{"template":{"spec":{"containers":[{"name":"'"cinema-bookings"'","image":"'"$BOOKINGS_CONFIG:$ENVIRONMENT-$REGION-$COMMIT"'"}]}}}}' -n $ENVIRONMENT-$REGION
