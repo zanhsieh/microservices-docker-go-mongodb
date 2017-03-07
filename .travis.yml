@@ -68,8 +68,8 @@ after_success:
   - echo $GCLOUD_KEY | base64 --decode > gcloud.p12
   - gcloud auth activate-service-account $GCLOUD_EMAIL --key-file gcloud.p12
   - ssh-keygen -f ~/.ssh/google_compute_engine -N ""
-  - gcloud container clusters get-credentials $CLOUDSDK_CLUSTER_NAME --project $CLOUDSDK_CORE_PROJECT_ID
   - gcloud config set container/use_client_certificate True
+  - gcloud container clusters get-credentials $CLOUDSDK_CLUSTER_NAME --project $CLOUDSDK_CORE_PROJECT_ID
   # PATCH DEPLOYMENTS
   - kubectl patch deployment users -p '{"spec":{"template":{"spec":{"containers":[{"name":"'"cinema-users"'","image":"'"$USERS_CONFIG:$ENVIRONMENT-$REGION-$COMMIT"'"}]}}}}' -n $ENVIRONMENT-$REGION
   - kubectl patch deployment showtimes -p '{"spec":{"template":{"spec":{"containers":[{"name":"'"cinema-showtimes"'","image":"'"$SHOWTIMES_CONFIG:$ENVIRONMENT-$REGION-$COMMIT"'"}]}}}}'  -n $ENVIRONMENT-$REGION
